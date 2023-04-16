@@ -1,28 +1,34 @@
 import './App.css'
 
+const bookOne = {
+  image: 'https://m.media-amazon.com/images/I/51zB8uNBS5L._SY291_BO1,204,203,200_QL40_ML2_.jpg',
+  title: 'Bored of Lunch: The Healthy Air Fryer Book',
+  author:'Nathan Anthony',
+};
+
+const bookTwo = {
+  image: 'https://m.media-amazon.com/images/I/512cU+NhyAL._SY344_BO1,204,203,200_.jpg',
+  title: 'Lessons in Chemistry',
+  author: ' Bonnie Garmus',
+};
+
 // Create a Book component
-function Book() {
+function Book(props) {
+  console.log(props);
   return (
     <article className="book">
-      <Image />
-      <Title />
-      <Author />
+      <img src={props.image} alt={props.title} />
+      <h2>{props.title}</h2>
+      <h4>{props.author}</h4>
     </article>
   )
 }
-// Create a Image, Title and Author components
-const Image = () => <img src="https://m.media-amazon.com/images/I/51zB8uNBS5L._SY291_BO1,204,203,200_QL40_ML2_.jpg" alt="Bored of Lunch: The Healthy Air Fryer Book by Nathan Anthony"/>;
-const Title = () => <h2>Bored of Lunch: The Healthy Air Fryer Book</h2>;
-const Author = () => <h4>Nathan Anthony</h4>;
 
 function App() {
   return (
     <section className="booklist">
-      <Book />
-      <Book />
-      <Book />
-      <Book />
-      <Book />
+      <Book image={bookOne.image} title={bookOne.title} author={bookOne.author} />
+      <Book  image={bookTwo.image} title={bookTwo.title} author={bookTwo.author}/>
     </section>
   )
 }
