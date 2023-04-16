@@ -2,18 +2,17 @@ import './App.css'
 
 // Create a Book component
 function Book() {
+  const image = "https://m.media-amazon.com/images/I/51zB8uNBS5L._SY291_BO1,204,203,200_QL40_ML2_.jpg";
+  const title = "Bored of Lunch: The Healthy Air Fryer Book";
+  const author = "Nathan Anthony";
   return (
     <article className="book">
-      <Image />
-      <Title />
-      <Author />
+      <img src={image} alt={title} />
+      <h2>{title}</h2>
+      <h4>{author}</h4>     
     </article>
   )
 }
-// Create a Image, Title and Author components
-const Image = () => <img src="https://m.media-amazon.com/images/I/51zB8uNBS5L._SY291_BO1,204,203,200_QL40_ML2_.jpg" alt="Bored of Lunch: The Healthy Air Fryer Book by Nathan Anthony"/>;
-const Title = () => <h2>Bored of Lunch: The Healthy Air Fryer Book</h2>;
-const Author = () => <h4>Nathan Anthony</h4>;
 
 function App() {
   return (
