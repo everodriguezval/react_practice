@@ -12,6 +12,20 @@ body {
                                 "Droid Sans", "Helvetica Neue", sans-serif;
     }
 
+header {
+    text-align: center;
+    background-color: #078295;
+    color:  #fff;
+}
+
+header h1 {
+    padding-top: 1rem;
+}
+
+header p {
+    padding-bottom: 1rem;
+}
+
 .booklist {
     width: 90vw;
     max-width: 1170px;
@@ -25,10 +39,22 @@ body {
     border-radius: 10px;
     padding: 2rem;
     text-align: center;
+    position: relative;
+}
+
+.book div {
+    display: inline;
+    background-color: rgb(215, 114, 5);
+    color: #fff;
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 0.3rem;
 }
 
 .book img {
-    width: 100%;
+    width: 50%;
+    height: 60%;
     object-fit: cover;
 }
 
