@@ -1,0 +1,21 @@
+{
+  "name": "react_practice",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": { "format": "prettier --write \"src/**/*.{js,jsx}\"" },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/everodriguezval/react_practice.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/everodriguezval/react_practice/issues"
+  },
+  "homepage": "https://github.com/everodriguezval/react_practice#readme",
+  "devDependencies": {
+    "prettier": "^2.7.1"
+  }
+}
